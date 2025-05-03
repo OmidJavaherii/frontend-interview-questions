@@ -1,4 +1,4 @@
-### How do you conceptualize the CSS Box Model and its impact on layout decisions in a React application?
+### 1. How do you conceptualize the CSS Box Model and its impact on layout decisions in a React application?
 
 The **CSS Box Model** defines how elements are sized and spaced:
 
@@ -23,7 +23,9 @@ Example:
 
 This ensures padding and border don't unexpectedly affect width/height.
 
-### What’s your mental model for managing CSS specificity and inheritance in a large-scale React project?
+<br />
+
+### 2. What’s your mental model for managing CSS specificity and inheritance in a large-scale React project?
 
 I follow a **low-specificity-first** principle:
 
@@ -48,7 +50,9 @@ In React:
 
 I also limit use of `!important`, and avoid inheritance for critical properties like layout, instead opting for **explicit declarations** .
 
-### How do you think about the relationship between CSS layout models (e.g., Flexbox, Grid) and React component hierarchies?
+<br />
+
+### 3. How do you think about the relationship between CSS layout models (e.g., Flexbox, Grid) and React component hierarchies?
 
 I align **layout responsibilities with component boundaries** :
 
@@ -71,7 +75,9 @@ Example:
 
 This encourages **separation of layout and content logic** .
 
-### What’s your approach to modeling responsive design in CSS for a React application?
+<br />
+
+### 4. What’s your approach to modeling responsive design in CSS for a React application?
 
 I favor **mobile-first CSS** with utility tokens and design systems.
 
@@ -94,7 +100,9 @@ const Card = styled.div`
 
 At scale, I use **design tokens** and a **centralized layout system** to maintain consistency.
 
-### How do you reason about CSS performance (e.g., reflows, repaints) in the context of React’s re-rendering?
+<br />
+
+### 5. How do you reason about CSS performance (e.g., reflows, repaints) in the context of React’s re-rendering?
 
 Key principle: **Minimize layout thrashing** .
 
@@ -109,7 +117,9 @@ In React:
 - Avoid unnecessary DOM mutations in renders.
 - Use `memo`, `useCallback` to avoid triggering costly reflows via DOM updates.
 
-### What’s your mental model for scoping CSS in a React application (e.g., CSS Modules, Styled Components)?
+<br />
+
+### 6. What’s your mental model for scoping CSS in a React application (e.g., CSS Modules, Styled Components)?
 
 I treat each component as **a style boundary** . CSS scoping prevents leakage and overrides.
 
@@ -133,7 +143,9 @@ const Button = styled.button`
 
 For large apps, I often use **CSS Modules + utility classes** (e.g., Tailwind) for balance.
 
-### How do you design a CSS architecture to support theming (e.g., dark mode) in a React application?
+<br />
+
+### 7. How do you design a CSS architecture to support theming (e.g., dark mode) in a React application?
 
 I design themes using **CSS custom properties** and a **theme context/provider** .
 
@@ -162,7 +174,9 @@ Styled Components alternative:
 <ThemeProvider theme={lightTheme}>...</ThemeProvider>
 ```
 
-### How do you think about the evolution of CSS from preprocessors (e.g., Sass) to modern standards (e.g., native nesting)?
+<br />
+
+### 8. How do you think about the evolution of CSS from preprocessors (e.g., Sass) to modern standards (e.g., native nesting)?
 
 Sass brought:
 
@@ -181,7 +195,9 @@ Modern CSS focuses on **modularity** , **interop** , and **performance** . I’v
 - **Tailwind** or **CSS-in-JS** for utility-driven styling
 - **Native features** when browser support allows
 
-### What’s your approach to modeling CSS animations and transitions in a React application?
+<br />
+
+### 9. What’s your approach to modeling CSS animations and transitions in a React application?
 
 I divide animations into:
 
@@ -200,7 +216,9 @@ Example (Framer Motion):
 
 I prefer **CSS transitions** for simple effects (less overhead), and **JS-driven animation** when interaction/state complexity is high.
 
-### How do you design a CSS system to support cross-browser consistency in a React application?
+<br />
+
+### 10. How do you design a CSS system to support cross-browser consistency in a React application?
 
 Approach:
 

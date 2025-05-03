@@ -1,4 +1,4 @@
-### What are some best practices you follow when writing React code in a team environment?
+### 1. What are some best practices you follow when writing React code in a team environment?
 
 - **Component Organization:** I follow a feature-based folder structure (e.g., `src/features/Todo/`) to group related components, styles, and tests together, improving modularity and maintainability.
 - **Component Naming:** Use clear and descriptive names for components and hooks (`UserCard`, `useFetchUser`), and follow PascalCase for components, camelCase for variables/functions.
@@ -7,7 +7,9 @@
 - **Hooks and Logic Reuse:** Business logic goes into custom hooks (`useForm`, `useDebounce`) for reuse and testability.
 - **Code Review Culture:** I advocate for regular PR reviews with enforced CI linting/tests to ensure code quality and team alignment.
 
-### How do you ensure your React code is clean, readable, and follows consistent standards?
+<br />
+
+### 2. How do you ensure your React code is clean, readable, and follows consistent standards?
 
 **Approach:**
 
@@ -33,7 +35,9 @@ const UserList = ({ users }: { users: User[] }) => (
 
 Clean, typed, and simple.
 
-### How do you handle version control and collaboration on a React project with multiple developers?
+<br />
+
+### 3. How do you handle version control and collaboration on a React project with multiple developers?
 
 **Practices:**
 
@@ -43,7 +47,9 @@ Clean, typed, and simple.
 - **Documentation:** I document component APIs and usage patterns via Storybook or internal docs to ease onboarding and collaboration.
 - **Merge Conflicts:** Regularly pull and rebase from `main` or `develop` to avoid large conflicts and integration surprises.
 
-### How do you stay updated with the latest changes in React and frontend development?
+<br />
+
+### 4. How do you stay updated with the latest changes in React and frontend development?
 
 **Strategies:**
 
@@ -53,7 +59,9 @@ Clean, typed, and simple.
 - **Experimentation:** I regularly prototype with new libraries or patterns in side projects or Codesandbox experiments.
 - **Conferences & Talks:** Watch talks from ReactConf, JSConf, and local meetups. I also occasionally present findings back to the team.
 
-### How do you ensure your React components are reusable and maintainable?
+<br />
+
+### 5. How do you ensure your React components are reusable and maintainable?
 
 **Key Techniques:**
 

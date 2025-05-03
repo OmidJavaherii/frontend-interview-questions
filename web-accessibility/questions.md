@@ -1,4 +1,4 @@
-### What steps do you take to ensure a React application meets WCAG 2.1 accessibility standards?
+### 1. What steps do you take to ensure a React application meets WCAG 2.1 accessibility standards?
 
 To meet WCAG 2.1, I focus on **semantic HTML** , **keyboard support** , **screen reader compatibility** , and **color contrast** .
 
@@ -12,7 +12,9 @@ Key steps:
 - Test with screen readers (e.g. NVDA, VoiceOver).
 - Regular audits with **axe** , **Lighthouse** , and **manual testing** .
 
-### How do you handle keyboard navigation and focus management in a complex React component like a modal or dropdown?
+<br />
+
+### 2. How do you handle keyboard navigation and focus management in a complex React component like a modal or dropdown?
 
 I ensure:
 
@@ -21,7 +23,9 @@ I ensure:
 3. **Return focus** : Restore focus to the trigger on close.
 4. **Keyboard handlers** : Support Tab/Shift+Tab, Escape, Arrow keys.
 
-### Describe a time when you improved the accessibility of a frontend feature. What tools did you use?
+<br />
+
+### 3. Describe a time when you improved the accessibility of a frontend feature. What tools did you use?
 
 At my last role, we had a custom dropdown with mouse-only interaction. I:
 
@@ -32,7 +36,9 @@ At my last role, we had a custom dropdown with mouse-only interaction. I:
 
 Result: WCAG 2.1 AA compliance and improved experience for keyboard and screen reader users.
 
-### How do you test for accessibility in a React app, and what role do tools like Axe or Lighthouse play?
+<br />
+
+### 4. How do you test for accessibility in a React app, and what role do tools like Axe or Lighthouse play?
 
 I use a combination of **automated** , **manual** , and **assistive tech testing** .
 
@@ -44,7 +50,9 @@ Tools:
 - **Screen readers** : VoiceOver, NVDA for real-world behavior.
 - **Keyboard testing** : Navigate UI using Tab, Shift+Tab, Enter, and Esc.
 
-### What are some common accessibility mistakes in React applications, and how do you prevent them?
+<br />
+
+### 5. What are some common accessibility mistakes in React applications, and how do you prevent them?
 
 **Common issues** and solutions:
 

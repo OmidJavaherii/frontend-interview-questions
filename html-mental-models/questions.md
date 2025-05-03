@@ -1,4 +1,4 @@
-### How do you conceptualize the HTML Document Object Model (DOM) and its relationship to React’s Virtual DOM?
+### 1. How do you conceptualize the HTML Document Object Model (DOM) and its relationship to React’s Virtual DOM?
 
 The **DOM** is the browser's live tree representation of the HTML document. Manipulating it directly is expensive due to reflows/repaints.
 
@@ -13,7 +13,9 @@ useState triggers re-render → VDOM diff → minimal DOM updates
 
 This model improves performance and enables declarative UIs.
 
-### What’s your mental model for structuring semantic HTML in a component-based framework like React?
+<br />
+
+### 2. What’s your mental model for structuring semantic HTML in a component-based framework like React?
 
 Semantics should guide structure, even within components. I map **roles and intent** to proper tags (`<nav>`, `<main>`, `<section>`, `<article>`).
 
@@ -32,7 +34,9 @@ function BlogPost({ title, content }) {
 
 I avoid div soup by treating components as semantic wrappers and using HTML5 tags when possible. This improves accessibility and SEO.
 
-### How do you think about the interplay between HTML attributes (e.g., `data-*`, `aria-*`) and React props?
+<br />
+
+### 3. How do you think about the interplay between HTML attributes (e.g., `data-*`, `aria-*`) and React props?
 
 React treats standard HTML attributes and special-purpose ones (`aria-*`, `data-*`) as **props passed down to the DOM node** .
 
@@ -46,7 +50,9 @@ React treats standard HTML attributes and special-purpose ones (`aria-*`, `data-
 - `aria-*`: For accessibility (screen reader support).
 - Both are **first-class citizens** in JSX and should be handled deliberately.
 
-### How would you design an HTML structure to support a complex, nested UI (e.g., a multi-level navigation menu) while keeping it maintainable?
+<br />
+
+### 4. How would you design an HTML structure to support a complex, nested UI (e.g., a multi-level navigation menu) while keeping it maintainable?
 
 Approach:
 
@@ -67,7 +73,9 @@ function NavItem({ label, children }) {
 
 I separate concerns (e.g., presentation vs logic) and ensure keyboard navigation and accessibility.
 
-### What’s your approach to modeling HTML forms in a React application, especially for validation and submission?
+<br />
+
+### 5. What’s your approach to modeling HTML forms in a React application, especially for validation and submission?
 
 I use **controlled components** for predictable state:
 
@@ -86,7 +94,9 @@ For validation:
 <form onSubmit={handleSubmit(onSubmit)} />
 ```
 
-### How do you reason about the impact of HTML parsing and rendering on page load performance?
+<br />
+
+### 6. How do you reason about the impact of HTML parsing and rendering on page load performance?
 
 The **critical rendering path** is impacted by:
 
@@ -100,7 +110,9 @@ I optimize by:
 - Prioritizing content order (above-the-fold).
 - Using SSR/Streaming for time-to-first-byte wins.
 
-### What’s your mental model for handling HTML events in a React application versus vanilla JavaScript?
+<br />
+
+### 7. What’s your mental model for handling HTML events in a React application versus vanilla JavaScript?
 
 In React:
 
@@ -124,7 +136,9 @@ In vanilla JS:
 
 React simplifies the lifecycle and performance.
 
-### How do you design HTML structures to support progressive enhancement in a React-based application?
+<br />
+
+### 8. How do you design HTML structures to support progressive enhancement in a React-based application?
 
 I build HTML to work **without JavaScript first** , then enhance with React.
 
@@ -145,7 +159,9 @@ Use:
 
 Enhancement adds filters, animations, etc. after hydration.
 
-### How do you think about the role of HTML in a server-side rendered (SSR) React application?
+<br />
+
+### 9. How do you think about the role of HTML in a server-side rendered (SSR) React application?
 
 HTML is the **initial render** delivered to the browser in SSR:
 
@@ -158,7 +174,9 @@ My model:
 - Use `<head>` tags for meta, title, preload (via `react-helmet` or `@vitejs/plugin-react`).
 - Avoid non-deterministic rendering (e.g., `window`, `localStorage` on server).
 
-### What’s your mental model for managing HTML metadata (e.g., `<meta>`, `<link>`) in a single-page application (SPA)?
+<br />
+
+### 10. What’s your mental model for managing HTML metadata (e.g., `<meta>`, `<link>`) in a single-page application (SPA)?
 
 I treat metadata as part of the **dynamic route context** . For SPAs:
 

@@ -1,4 +1,4 @@
-### How do you define and enforce a performance budget for a React application?
+### 1. How do you define and enforce a performance budget for a React application?
 
 **Answer:**
 
@@ -23,7 +23,9 @@ performance: {
 
 ```
 
-### What’s your approach to auditing a React app against a performance budget during development?
+<br />
+
+### 2. What’s your approach to auditing a React app against a performance budget during development?
 
 **Answer:**
 
@@ -36,7 +38,9 @@ I use **automated and manual tools** in dev workflows:
 
 Integrate metrics into PR reviews to ensure accountability.
 
-### How do you balance feature development with maintaining a performance budget in a React project?
+<br />
+
+### 3. How do you balance feature development with maintaining a performance budget in a React project?
 
 **Answer:**
 
@@ -48,7 +52,9 @@ Balance through **guardrails and priorities** :
 
 I advocate for performance as a **non-functional requirement** , not an afterthought.
 
-### What’s your strategy for optimizing third-party scripts within a performance budget?
+<br />
+
+### 4. What’s your strategy for optimizing third-party scripts within a performance budget?
 
 **Answer:**
 
@@ -63,7 +69,9 @@ I advocate for performance as a **non-functional requirement** , not an aftertho
 2. Use **Web Workers** to isolate heavy work off the main thread.
 3. Leverage **Subresource Integrity (SRI)** and **preconnect** for faster delivery.
 
-### How do you integrate performance budget checks into a CI/CD pipeline for a React app?
+<br />
+
+### 5. How do you integrate performance budget checks into a CI/CD pipeline for a React app?
 
 **Answer:**
 
@@ -86,7 +94,9 @@ lighthouse-ci:
 
 - Integrate **Web Vitals tracking** (via `@vercel/web-vitals`) into production for post-deploy insights.
 
-### What’s your approach to optimizing images and assets in a React app to meet a performance budget?
+<br />
+
+### 6. What’s your approach to optimizing images and assets in a React app to meet a performance budget?
 
 **Answer:**
 
@@ -106,7 +116,9 @@ lighthouse-ci:
 
 - For static sites, tools like **Next.js Image Component** handle most of this automatically.
 
-### How do you measure and improve Time to Interactive (TTI) in a React application?
+<br />
+
+### 7. How do you measure and improve Time to Interactive (TTI) in a React application?
 
 **Answer:**
 
@@ -123,7 +135,9 @@ const HeavyComponent = React.lazy(() => import('./Heavy'));
 
 ```
 
-### What’s your process for identifying and eliminating render-blocking resources in a React app?
+<br />
+
+### 8. What’s your process for identifying and eliminating render-blocking resources in a React app?
 
 **Answer:**
 
@@ -139,7 +153,9 @@ const HeavyComponent = React.lazy(() => import('./Heavy'));
 
 Webpack plugins like `mini-css-extract-plugin` + critical CSS extractors help automate this.
 
-### How do you educate a team on adhering to a performance budget in a React codebase?
+<br />
+
+### 9. How do you educate a team on adhering to a performance budget in a React codebase?
 
 **Answer:**
 
@@ -149,7 +165,9 @@ Webpack plugins like `mini-css-extract-plugin` + critical CSS extractors help au
 - Highlight regressions in retros.
 - Showcase wins (e.g., TTI improvements) to build a performance-first culture.
 
-### What’s your approach to maintaining a performance budget as a React app scales over time?
+<br />
+
+### 10. What’s your approach to maintaining a performance budget as a React app scales over time?
 
 - Treat performance as a **living contract** , revisiting budgets quarterly.
 - Use **RUM tools** (e.g., SpeedCurve, NewRelic) to monitor real-world performance.

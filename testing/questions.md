@@ -1,4 +1,4 @@
-### How do you approach testing React components? What tools or libraries do you use (e.g., Jest, React Testing Library)?
+### 1. How do you approach testing React components? What tools or libraries do you use (e.g., Jest, React Testing Library)?
 
 I focus on testing **behavior over implementation** using:
 
@@ -9,7 +9,9 @@ I focus on testing **behavior over implementation** using:
 
 My philosophy: test components as users interact with them — clicking, typing, and observing outputs — rather than internal state.
 
-### Write a simple test case for a React component that renders a button and updates a counter on click.
+<br />
+
+### 2. Write a simple test case for a React component that renders a button and updates a counter on click.
 
 ```jsx
 // Counter.test.tsx
@@ -23,7 +25,9 @@ test("increments count on click", () => {
 });
 ```
 
-### What’s the difference between unit testing and integration testing in the context of React applications?
+<br />
+
+### 3. What’s the difference between unit testing and integration testing in the context of React applications?
 
 - **Unit Testing** : Tests a single component in isolation (e.g., logic, rendering, user events).
   _Example: testing a `Button` component’s click handler._
@@ -32,7 +36,9 @@ test("increments count on click", () => {
 
 Unit tests are faster and more focused; integration tests provide higher confidence for real-world flows.
 
-### How do you mock an API call in a React component test?
+<br />
+
+### 4. How do you mock an API call in a React component test?
 
 I use **MSW (Mock Service Worker)** for realistic API mocking at the network level.
 
@@ -53,7 +59,9 @@ afterAll(() => server.close());
 
 This keeps tests close to how the app behaves in production.
 
-### How do you structure unit tests for a React component that relies on an external API?
+<br />
+
+### 5. How do you structure unit tests for a React component that relies on an external API?
 
 I isolate the API logic from the UI component and test both:
 
@@ -64,7 +72,9 @@ I isolate the API logic from the UI component and test both:
 
 This separation improves test reliability and clarity.
 
-### Write an integration test using Cypress or Playwright for a React form submission flow.
+<br />
+
+### 6. Write an integration test using Cypress or Playwright for a React form submission flow.
 
 ```tsx
 // cypress/e2e/form_spec.cy.js
@@ -81,7 +91,9 @@ describe("Contact Form", () => {
 });
 ```
 
-### What’s your approach to end-to-end testing in a React application with multiple user roles?
+<br />
+
+### 7. What’s your approach to end-to-end testing in a React application with multiple user roles?
 
 I simulate user behavior based on roles (e.g., admin vs. user):
 
@@ -92,7 +104,9 @@ I simulate user behavior based on roles (e.g., admin vs. user):
 - Stub auth responses or use seeded test accounts in test environments.
 - Keep role-based test cases organized (e.g., `admin/`, `user/` folders).
 
-### How do you ensure test coverage remains meaningful and not just a metric to hit?
+<br />
+
+### 8. How do you ensure test coverage remains meaningful and not just a metric to hit?
 
 I focus on **testing value** , not just numbers:
 

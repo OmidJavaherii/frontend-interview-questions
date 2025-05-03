@@ -1,4 +1,4 @@
-### How do you evaluate the potential of WebAssembly in a React application?
+### 1. How do you evaluate the potential of WebAssembly in a React application?
 
 **Answer:**
 
@@ -20,7 +20,9 @@ useEffect(() => {
 
 Integration is seamless via async modules, especially in Web Workers.
 
-### What’s your take on the rise of server components in React (e.g., Next.js Server Components)?
+<br />
+
+### 2. What’s your take on the rise of server components in React (e.g., Next.js Server Components)?
 
 **Answer:**
 
@@ -34,7 +36,9 @@ Benefits:
 
 Caveat: adoption requires architectural rethink and clear separation of client vs server logic.
 
-### How do you prepare a React codebase for adopting emerging CSS features (e.g., Container Queries)?
+<br />
+
+### 3. How do you prepare a React codebase for adopting emerging CSS features (e.g., Container Queries)?
 
 **Answer:**
 
@@ -53,7 +57,9 @@ Caveat: adoption requires architectural rethink and clear separation of client v
 - Fall back to polyfills (e.g., `cqfill`) if needed for legacy browsers
 - Stay modular—easier to refactor styles when new features land
 
-### What’s your approach to integrating AI-driven features (e.g., chatbots, personalization) into a React app?
+<br />
+
+### 4. What’s your approach to integrating AI-driven features (e.g., chatbots, personalization) into a React app?
 
 **Answer:**
 
@@ -73,7 +79,9 @@ useEffect(() => {
 
 I prioritize **latency** , **fallbacks** , and **ethical UX** (clear feedback, no hallucination).
 
-### How do you assess the impact of new JavaScript ECMAScript proposals on a React project?
+<br />
+
+### 5. How do you assess the impact of new JavaScript ECMAScript proposals on a React project?
 
 **Answer:**
 I follow TC39 stages and evaluate:
@@ -86,7 +94,9 @@ Example: **Records & Tuples** bring structural immutability, helpful in reducer 
 
 I experiment in side projects, and if adoption is promising, introduce via `babel-plugin-proposal-*`.
 
-### What’s your strategy for future-proofing a React app against framework obsolescence?
+<br />
+
+### 6. What’s your strategy for future-proofing a React app against framework obsolescence?
 
 **Answer:**
 
@@ -103,7 +113,9 @@ export const useUser = () => useQuery("user", fetchUser);
 
 This enables migration (e.g., to Next.js or Astro) with lower friction.
 
-### How do you leverage modern browser APIs (e.g., Intersection Observer, WebGPU) in a React app?
+<br />
+
+### 7. How do you leverage modern browser APIs (e.g., Intersection Observer, WebGPU) in a React app?
 
 **Answer:**
 I use:
@@ -127,7 +139,9 @@ if ("gpu" in navigator) {
 }
 ```
 
-### What’s your take on the evolution of state management libraries beyond Redux and Zustand?
+<br />
+
+### 8. What’s your take on the evolution of state management libraries beyond Redux and Zustand?
 
 **Answer:**
 The trend is toward **lightweight** , **scalable** , and **reactive** tools:
@@ -138,7 +152,9 @@ The trend is toward **lightweight** , **scalable** , and **reactive** tools:
 
 I prioritize **cohesiveness with React mental model** and **low boilerplate** . Zustand remains my default for simplicity unless global effects or optimistic updates require more.
 
-### How do you stay ahead of frontend trends while maintaining stability in a production React app?
+<br />
+
+### 9. How do you stay ahead of frontend trends while maintaining stability in a production React app?
 
 **Answer:**
 
@@ -148,7 +164,9 @@ I prioritize **cohesiveness with React mental model** and **low boilerplate** . 
 - Use **feature flags** and **canary releases** for safe rollout
 - Ensure CI coverage and monitoring guard production from regressions
 
-### How do you mentor a team to adopt emerging technologies in a React codebase responsibly?
+<br />
+
+### 10. How do you mentor a team to adopt emerging technologies in a React codebase responsibly?
 
 **Answer:**
 

@@ -1,4 +1,4 @@
-### How do you design a micro-frontend architecture for a large React application split across multiple teams?
+### 1. How do you design a micro-frontend architecture for a large React application split across multiple teams?
 
 **Answer:**
 
@@ -28,7 +28,9 @@ new ModuleFederationPlugin({
 
 ```
 
-### What’s your approach to managing shared dependencies in a micro-frontend React ecosystem?
+<br />
+
+### 2. What’s your approach to managing shared dependencies in a micro-frontend React ecosystem?
 
 **Answer:**
 
@@ -49,7 +51,9 @@ Key considerations:
 - Use **peerDependencies** when packaging components.
 - Align dependency resolution during CI to catch conflicts early.
 
-### How do you handle state sharing between micro-frontends in a React app?
+<br />
+
+### 3. How do you handle state sharing between micro-frontends in a React app?
 
 **Answer:**
 Use one of the following based on isolation needs:
@@ -68,7 +72,9 @@ import useCartStore from 'cart/store';
 
 Keep shared state minimal to preserve MFE independence.
 
-### What’s your strategy for routing in a micro-frontend React application?
+<br />
+
+### 4. What’s your strategy for routing in a micro-frontend React application?
 
 **Answer:**
 Two common strategies:
@@ -91,7 +97,9 @@ Two common strategies:
 
 Use URL prefixes and consistent route structure to avoid collisions.
 
-### How do you ensure consistent UI/UX across micro-frontends built by different teams?
+<br />
+
+### 5. How do you ensure consistent UI/UX across micro-frontends built by different teams?
 
 **Answer:**
 
@@ -101,7 +109,9 @@ Use URL prefixes and consistent route structure to avoid collisions.
 
 Optional: Apply **runtime theming** or design tokens to unify branding.
 
-### What’s your approach to testing a micro-frontend React app end-to-end?
+<br />
+
+### 6. What’s your approach to testing a micro-frontend React app end-to-end?
 
 **Answer:**
 
@@ -110,7 +120,9 @@ Optional: Apply **runtime theming** or design tokens to unify branding.
 - Mock APIs via **MSW** or test backend environments.
 - Run tests **in parallel** per MFE in CI to reduce build time.
 
-### How do you deploy micro-frontends in a CI/CD pipeline for a React project?
+<br />
+
+### 7. How do you deploy micro-frontends in a CI/CD pipeline for a React project?
 
 **Answer:**
 
@@ -123,7 +135,9 @@ Optional: Apply **runtime theming** or design tokens to unify branding.
 
 Use **semantic versioning** and **env-specific remotes** to support multi-env testing.
 
-### What’s your process for debugging a micro-frontend React app when issues span multiple modules?
+<br />
+
+### 8. What’s your process for debugging a micro-frontend React app when issues span multiple modules?
 
 **Answer:**
 
@@ -135,7 +149,9 @@ Use **semantic versioning** and **env-specific remotes** to support multi-env te
 
 Add feature flags to selectively disable MFEs for quicker isolation.
 
-### How do you handle performance optimization in a micro-frontend architecture?
+<br />
+
+### 9. How do you handle performance optimization in a micro-frontend architecture?
 
 **Answer:**
 
@@ -152,7 +168,9 @@ const CheckoutApp = React.lazy(() => import('checkout/CheckoutApp'));
 
 - Cache `remoteEntry.js` using long-lived headers with cache-busting versioning.
 
-### How do you onboard a team to a micro-frontend approach in a React codebase?
+<br />
+
+### 10. How do you onboard a team to a micro-frontend approach in a React codebase?
 
 **Answer:**
 

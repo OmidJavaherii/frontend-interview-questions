@@ -1,4 +1,4 @@
-### Compare Webpack, Vite, and ESBuild in terms of speed, configuration, and use cases. Which would you choose for a React project and why?
+### 1. Compare Webpack, Vite, and ESBuild in terms of speed, configuration, and use cases. Which would you choose for a React project and why?
 
 | Feature       | Webpack                                         | Vite                                               | ESBuild                                   |
 | ------------- | ----------------------------------------------- | -------------------------------------------------- | ----------------------------------------- |
@@ -10,7 +10,9 @@
 
 > For modern React projects, Vite is my preferred choice. It offers blazing-fast startup using native ESM, integrates smoothly with React + TypeScript, and significantly improves DX over Webpack. For large legacy apps, Webpack still has broader plugin ecosystem and fine-grained control.
 
-### How do you configure a custom Webpack setup for a React app with TypeScript and CSS preprocessing?
+<br />
+
+### 2. How do you configure a custom Webpack setup for a React app with TypeScript and CSS preprocessing?
 
 You’ll need:
 
@@ -38,14 +40,18 @@ Install `babel-loader`, `@babel/preset-react`, `@babel/preset-typescript`, and c
 
 This setup supports React + TypeScript and SCSS, ideal for scalable frontend architectures.
 
-### What are the benefits of using Vite over Webpack in a modern React project?
+<br />
+
+### 3. What are the benefits of using Vite over Webpack in a modern React project?
 
 - **Faster startup** : No bundling during dev. Uses native ESM + ESBuild for instant HMR.
 - **Simplified config** : Minimal boilerplate. React plugin via `@vitejs/plugin-react`.
 - **Out-of-the-box support** : JSX, TypeScript, CSS Modules, PostCSS.
 - **Production builds** : Still uses Rollup under the hood for optimal tree-shaking.
 
-### How do you optimize a build process to reduce deployment time in a CI/CD pipeline?
+<br />
+
+### 4. How do you optimize a build process to reduce deployment time in a CI/CD pipeline?
 
 - **Enable caching** :
 - Use `webpack.cache` (in memory or filesystem).
@@ -63,7 +69,9 @@ This setup supports React + TypeScript and SCSS, ideal for scalable frontend arc
 - **Incremental builds** :
 - Tools like Nx or Turborepo allow caching and only rebuilding changed packages.
 
-### Describe a time when you had to debug a bundler-related issue in a React application.
+<br />
+
+### 5. Describe a time when you had to debug a bundler-related issue in a React application.
 
 In a previous project, a React app using Webpack started throwing runtime errors in production — despite working in dev. After investigation, I found:
 
