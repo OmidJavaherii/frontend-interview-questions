@@ -37,7 +37,6 @@ A well-organized collection of frontend interview questions, categorized by topi
 - ✅ Use it to study for frontend interviews
 - 🔁 Contribute more questions or improve answers
 - 📥 Clone or fork this repo and practice regularly
--
 
 ## 🙌 Contributing
 
