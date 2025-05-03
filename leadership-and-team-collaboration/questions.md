@@ -1,4 +1,4 @@
-### Describe a time when you led a frontend team through a challenging project. How did you ensure success?
+### 1. Describe a time when you led a frontend team through a challenging project. How did you ensure success?
 
 At my previous role, we had to rebuild a legacy dashboard in React within 3 months to align with a product relaunch. The codebase was tightly coupled, poorly documented, and lacked test coverage.
 
@@ -12,7 +12,9 @@ At my previous role, we had to rebuild a legacy dashboard in React within 3 mont
 
 We delivered on time, with 90% unit test coverage and a shared component library that accelerated future development.
 
-### How do you approach mentoring junior developers in React.js or frontend best practices?
+<br />
+
+### 2. How do you approach mentoring junior developers in React.js or frontend best practices?
 
 I focus on **contextual learning** , **pair programming** , and **code reviews** as mentoring tools.
 
@@ -25,7 +27,9 @@ I focus on **contextual learning** , **pair programming** , and **code reviews**
 
 I also rotate juniors through different parts of the codebase so they gain confidence across routing, state management, and UI architecture.
 
-### What strategies do you use to conduct effective code reviews for a team working on a React codebase?
+<br />
+
+### 3. What strategies do you use to conduct effective code reviews for a team working on a React codebase?
 
 My reviews focus on **readability** , **reusability** , **performance** , and **consistency** .
 
@@ -39,7 +43,9 @@ My reviews focus on **readability** , **reusability** , **performance** , and **
 
 I aim to **teach, not gatekeep** , and balance suggestions with praise to maintain a strong feedback culture.
 
-### How do you balance technical leadership with hands-on coding in a leadership role?
+<br />
+
+### 4. How do you balance technical leadership with hands-on coding in a leadership role?
 
 I allocate 50–60% of my time to hands-on coding, focusing on foundational work (e.g., setting up the design system or build tools) and critical path features.
 
@@ -51,7 +57,9 @@ I allocate 50–60% of my time to hands-on coding, focusing on foundational work
 
 This approach keeps me close to the code while creating space for team growth and scalability.
 
-### Tell us about a time you resolved a conflict between team members over a technical decision (e.g., choosing a state management library).
+<br />
+
+### 5. Tell us about a time you resolved a conflict between team members over a technical decision (e.g., choosing a state management library).
 
 Two senior devs were debating whether to use Redux Toolkit or Zustand for a new feature. One valued Redux’s structure, the other preferred Zustand’s simplicity.
 
@@ -63,7 +71,9 @@ Two senior devs were debating whether to use Redux Toolkit or Zustand for a new 
 
 We chose Zustand for the MVP with a wrapper layer to abstract store access, allowing for future migration. The key was **neutral facilitation and evidence-based decision making** .
 
-### How do you align frontend development goals with business objectives when collaborating with product managers and stakeholders?
+<br />
+
+### 6. How do you align frontend development goals with business objectives when collaborating with product managers and stakeholders?
 
 I make technical goals **visible** and tie them to **business outcomes** .
 
@@ -78,7 +88,9 @@ I work closely with PMs to **prioritize tech tasks in the roadmap** , often bund
 
 Transparency and shared language (not jargon) are key to alignment.
 
-### What’s your process for conducting performance reviews for engineers on your team?
+<br />
+
+### 7. What’s your process for conducting performance reviews for engineers on your team?
 
 I use a **360-degree** feedback approach aligned with clear competency matrices.
 
@@ -91,7 +103,9 @@ I use a **360-degree** feedback approach aligned with clear competency matrices.
 
 I also encourage **self-assessment** to drive introspection, and make sure feedback is actionable, not vague.
 
-### How have you contributed to hiring efforts, and what do you look for in a strong frontend candidate?
+<br />
+
+### 8. How have you contributed to hiring efforts, and what do you look for in a strong frontend candidate?
 
 I’ve led hiring pipelines: wrote job descriptions, built take-home assessments, and conducted behavioral + technical interviews.
 
@@ -104,7 +118,9 @@ I’ve led hiring pipelines: wrote job descriptions, built take-home assessments
 
 Cultural alignment is also key — curiosity, empathy, and a bias toward collaboration matter as much as technical skill.
 
-### How do you ensure knowledge sharing and documentation in a team working on a large React/Vue.js project?
+<br />
+
+### 9. How do you ensure knowledge sharing and documentation in a team working on a large React/Vue.js project?
 
 **Tactics:**
 
@@ -116,7 +132,9 @@ Cultural alignment is also key — curiosity, empathy, and a bias toward collabo
 
 I also champion code that’s **self-documenting** — clear naming, clean abstractions, and comments only when necessary.
 
-### Describe a situation where you advocated for a frontend technology or approach to non-technical stakeholders. How did you make your case?
+<br />
+
+### 10. Describe a situation where you advocated for a frontend technology or approach to non-technical stakeholders. How did you make your case?
 
 I proposed introducing a design system using Tailwind + Storybook to replace inconsistent, duplicated styles across 4 products.
 

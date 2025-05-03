@@ -1,4 +1,4 @@
-### **What is the Virtual DOM, and how does React use it to improve performance?**
+### 1. What is the Virtual DOM, and how does React use it to improve performance?
 
 The Virtual DOM (VDOM) is a lightweight, in-memory representation of the real DOM. React uses it to optimize updates and rendering.
 
@@ -11,7 +11,9 @@ When state or props change:
 
 This reduces direct DOM manipulations, which are expensive, improving performance.
 
-### Explain the difference between functional components and class components in React.
+<br />
+
+### 2. Explain the difference between functional components and class components in React.
 
 | Aspect        | Class Component           | Functional Component |
 | ------------- | ------------------------- | -------------------- |
@@ -20,7 +22,9 @@ This reduces direct DOM manipulations, which are expensive, improving performanc
 | Lifecycle     | `componentDidMount`, etc. | `useEffect`          |
 | `this`context | Required                  | Not used             |
 
-### What are React Hooks? Explain `useState`, `useEffect`, and `useContext` with examples.
+<br />
+
+### 3. What are React Hooks? Explain `useState`, `useEffect`, and `useContext` with examples.
 
 Hooks let functional components manage **state** , side effects, and context — features previously only available in class components.
 
@@ -28,7 +32,9 @@ Hooks let functional components manage **state** , side effects, and context —
 - **`useEffect`** : Handles side effects (data fetching, subscriptions).
 - **`useContext`** : Accesses context values.
 
-### How does React handle component lifecycle methods in functional components?
+<br />
+
+### 4. How does React handle component lifecycle methods in functional components?
 
 Functional components use **Hooks** to mimic lifecycle behavior:
 
@@ -38,7 +44,9 @@ Functional components use **Hooks** to mimic lifecycle behavior:
 | `componentDidUpdate`   | `useEffect(..., [deps])`            |
 | `componentWillUnmount` | `return () => {}`inside `useEffect` |
 
-### What is the significance of keys in React lists, and what happens if you don’t use them correctly?
+<br />
+
+### 5. What is the significance of keys in React lists, and what happens if you don’t use them correctly?
 
 **Keys** help React identify which items in a list have changed, been added, or removed. They must be **unique and stable** .
 
@@ -47,7 +55,9 @@ If you use indexes as keys or omit them:
 - React may incorrectly reuse components.
 - It can cause rendering bugs or poor performance.
 
-### What are the key differences between React.js and Vue.js in terms of component architecture and reactivity?
+<br />
+
+### 6. What are the key differences between React.js and Vue.js in terms of component architecture and reactivity?
 
 | Feature         | React                           | Vue                           |
 | --------------- | ------------------------------- | ----------------------------- |
@@ -59,7 +69,9 @@ If you use indexes as keys or omit them:
 
 React is more **unopinionated** (freedom, flexibility), while Vue offers a more **batteries-included** developer experience.
 
-### How do you decide whether to use React.js or Vue.js for a new project? What factors influence your choice?
+<br />
+
+### 7. How do you decide whether to use React.js or Vue.js for a new project? What factors influence your choice?
 
 **Factors:**
 
@@ -74,7 +86,9 @@ React is more **unopinionated** (freedom, flexibility), while Vue offers a more 
 - For large-scale, long-term, customizable UIs → React.
 - For fast-to-market apps or teams with less JS depth → Vue.
 
-### How would you migrate a legacy React application from class components to functional components with Hooks?
+<br />
+
+### 8. How would you migrate a legacy React application from class components to functional components with Hooks?
 
 **Step-by-step approach:**
 
@@ -84,7 +98,9 @@ React is more **unopinionated** (freedom, flexibility), while Vue offers a more 
 4. Handle bindings by removing `this`.
 5. Migrate context consumers using `useContext`.
 
-### What are Higher-Order Components (HOCs)? Provide an example of when you’ve used one.
+<br />
+
+### 9. What are Higher-Order Components (HOCs)? Provide an example of when you’ve used one.
 
 An HOC is a **function that takes a component and returns a new component** with enhanced behavior. It's a pattern for code reuse.
 
@@ -95,7 +111,9 @@ I’ve used HOCs to:
 - Add authentication checks to routes.
 - Connect components to Redux (e.g., `connect()`).
 
-### How do you handle complex component composition in React.js or Vue.js to avoid tightly coupled code?
+<br />
+
+### 10. How do you handle complex component composition in React.js or Vue.js to avoid tightly coupled code?
 
 **Strategies:**
 
@@ -104,7 +122,9 @@ I’ve used HOCs to:
 - Split UI and logic (smart/dumb component pattern).
 - Avoid prop drilling via **context** or **provide/inject** in Vue.
 
-### What is React Reconciliation, and how does it work under the hood?
+<br />
+
+### 11. What is React Reconciliation, and how does it work under the hood?
 
 Reconciliation is the process React uses to update the DOM when a component’s state or props change.
 

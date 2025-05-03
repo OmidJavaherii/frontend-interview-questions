@@ -1,4 +1,4 @@
-### How would you implement server-side rendering (SSR) in a React application?
+### 1. How would you implement server-side rendering (SSR) in a React application?
 
 **Approach** : Use a framework like **Next.js** , which abstracts the SSR setup.
 
@@ -31,7 +31,9 @@ const html = ReactDOMServer.renderToString(<App />);
 
 **When to use** : Public-facing pages that need SEO or fast first paint (e.g., landing pages, e-commerce).
 
-### What is the difference between controlled and uncontrolled components in React? When would you use each?
+<br />
+
+### 2. What is the difference between controlled and uncontrolled components in React? When would you use each?
 
 **Controlled** : Form state is managed by React via `useState`.
 
@@ -52,7 +54,9 @@ const inputRef = useRef();
 - **Controlled** : For dynamic validation, conditionally enabled fields, or complex form logic.
 - **Uncontrolled** : For simple forms, uncontrolled inputs (file uploads), or performance-sensitive scenarios.
 
-### How do you handle error boundaries in React? Can you write a simple error boundary component?
+<br />
+
+### 3. How do you handle error boundaries in React? Can you write a simple error boundary component?
 
 **Concept** :
 
@@ -90,7 +94,9 @@ class ErrorBoundary extends React.Component {
 
 **When to use** : Around major feature components, routes, or dynamic imports.
 
-### How would you architect a large-scale React application with hundreds of components to ensure scalability and maintainability?
+<br />
+
+### 4. How would you architect a large-scale React application with hundreds of components to ensure scalability and maintainability?
 
 **Key Practices** :
 
@@ -107,7 +113,9 @@ class ErrorBoundary extends React.Component {
 - **Linting/formatting/testing** standards enforced with tooling (ESLint, Prettier, Jest).
 - **Docs and Storybook** for component discovery and design system alignment.
 
-### What is the event delegation pattern, and how does React utilize it in its synthetic event system?
+<br />
+
+### 5. What is the event delegation pattern, and how does React utilize it in its synthetic event system?
 
 **Event Delegation** : A single handler (e.g., on `document`) listens for events from many child elements by leveraging event bubbling.
 

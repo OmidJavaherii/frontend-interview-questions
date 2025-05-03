@@ -1,4 +1,4 @@
-### How would you design a frontend system to handle a high-traffic e-commerce platform with millions of concurrent users?
+### 1. How would you design a frontend system to handle a high-traffic e-commerce platform with millions of concurrent users?
 
 **Key strategies** :
 
@@ -11,7 +11,9 @@
 const Product = React.lazy(() => import("./Product"));
 ```
 
-### What’s your approach to designing a frontend architecture that supports real-time updates across multiple clients (e.g., a chat app or live dashboard)?
+<br />
+
+### 2. What’s your approach to designing a frontend architecture that supports real-time updates across multiple clients (e.g., a chat app or live dashboard)?
 
 **Approach** :
 
@@ -26,7 +28,9 @@ socket.on("newMessage", (msg) => {
 
 - Implement **presence** , **typing indicators** , and **message queues** on client for resilience.
 
-### How do you design a frontend system that can seamlessly switch between online and offline modes?
+<br />
+
+### 3. How do you design a frontend system that can seamlessly switch between online and offline modes?
 
 **Techniques** :
 
@@ -40,7 +44,9 @@ window.addEventListener("online", syncQueuedRequests);
 
 - Use optimistic UI updates with rollback on sync failure.
 
-### How would you architect a frontend system to support internationalization (i18n) and localization (L10n) for a global audience?
+<br />
+
+### 4. How would you architect a frontend system to support internationalization (i18n) and localization (L10n) for a global audience?
 
 **Architecture** :
 
@@ -52,7 +58,9 @@ window.addEventListener("online", syncQueuedRequests);
 i18n.changeLanguage("fr"); // dynamically switches language
 ```
 
-### What’s your strategy for designing a frontend system that integrates with a microservices backend?
+<br />
+
+### 5. What’s your strategy for designing a frontend system that integrates with a microservices backend?
 
 **Strategy** :
 
@@ -60,7 +68,9 @@ i18n.changeLanguage("fr"); // dynamically switches language
 - Normalize and transform microservice responses in a client-side **API layer** .
 - Handle versioning, retries, and fallbacks centrally.
 
-### How do you design a React application to minimize bundle size and optimize initial load time for a large-scale app?
+<br />
+
+### 6. How do you design a React application to minimize bundle size and optimize initial load time for a large-scale app?
 
 **Tactics** :
 
@@ -70,7 +80,9 @@ i18n.changeLanguage("fr"); // dynamically switches language
 - Use **dynamic imports** and **preload** critical assets.
 - Compress with Brotli and serve via CDN.
 
-### How would you design a frontend system to handle pagination, infinite scrolling, and large datasets (e.g., 100,000+ records)?
+<br />
+
+### 7. How would you design a frontend system to handle pagination, infinite scrolling, and large datasets (e.g., 100,000+ records)?
 
 **Best Practices** :
 
@@ -85,7 +97,9 @@ i18n.changeLanguage("fr"); // dynamically switches language
 
 - Avoid loading 100k records into memory.
 
-### What’s your approach to designing a frontend caching strategy to reduce redundant API calls in a React application?
+<br />
+
+### 8. What’s your approach to designing a frontend caching strategy to reduce redundant API calls in a React application?
 
 **Layers of caching** :
 
@@ -93,14 +107,18 @@ i18n.changeLanguage("fr"); // dynamically switches language
 - **Persistent** caching via IndexedDB or localStorage for static data.
 - Use cache keys + invalidation on mutation.
 
-### How do you design a frontend system to handle peak traffic spikes (e.g., Black Friday sales) without degrading performance?
+<br />
+
+### 9. How do you design a frontend system to handle peak traffic spikes (e.g., Black Friday sales) without degrading performance?
 
 - SSR with full-page CDN caching.
 - Minimize dynamic JS — use **islands architecture** or **partial hydration** .
 - Show graceful loading states, use fallback UI for rate-limited APIs.
 - Use feature flags to **disable non-critical features** during load spikes.
 
-### How would you architect a React application to support progressive web app (PWA) features like push notifications and offline caching?
+<br />
+
+### 10. How would you architect a React application to support progressive web app (PWA) features like push notifications and offline caching?
 
 **Architecture** :
 
@@ -114,7 +132,9 @@ self.addEventListener('push', event => {
 });
 ```
 
-### How do you design a state management system for a React app with complex, interdependent UI components?
+<br />
+
+### 11. How do you design a state management system for a React app with complex, interdependent UI components?
 
 **Approach** :
 
@@ -123,7 +143,9 @@ self.addEventListener('push', event => {
 - Normalize relational data to avoid nesting and circular dependencies.
 - Use derived selectors and memoization for performance.
 
-### What’s your approach to designing a frontend system that syncs data bidirectionally with a backend in real time (e.g., collaborative editing)?
+<br />
+
+### 12. What’s your approach to designing a frontend system that syncs data bidirectionally with a backend in real time (e.g., collaborative editing)?
 
 **Pattern** :
 
@@ -137,7 +159,9 @@ editor.onChange = (change) => socket.emit('doc:update', change);
 
 - Maintain versioning or timestamps to prevent collisions.
 
-### How would you design a frontend system to manage client-side data persistence across page refreshes and sessions?
+<br />
+
+### 13. How would you design a frontend system to manage client-side data persistence across page refreshes and sessions?
 
 **Tools** :
 
@@ -149,7 +173,9 @@ editor.onChange = (change) => socket.emit('doc:update', change);
 localStorage.setItem('theme', 'dark');
 ```
 
-### How do you design a frontend system to handle rate-limited or unreliable APIs without compromising user experience?
+<br />
+
+### 14. How do you design a frontend system to handle rate-limited or unreliable APIs without compromising user experience?
 
 **Strategies** :
 
@@ -161,7 +187,9 @@ localStorage.setItem('theme', 'dark');
 axiosRetry(api, { retries: 3, retryDelay: exponentialDelay });
 ```
 
-### What’s your approach to designing a frontend system that supports optimistic UI updates while ensuring data integrity with the backend?
+<br />
+
+### 15. What’s your approach to designing a frontend system that supports optimistic UI updates while ensuring data integrity with the backend?
 
 **Flow** :
 
@@ -178,7 +206,9 @@ mutation.mutate(updateItem, {
 
 Use `react-query` or a custom mutation manager for tracking.
 
-### How do you design a frontend system to work with a GraphQL backend versus a RESTful backend?
+<br />
+
+### 16. How do you design a frontend system to work with a GraphQL backend versus a RESTful backend?
 
 **Key differences** :
 
@@ -201,7 +231,9 @@ const { data, loading } = useQuery(GET_PRODUCT, { variables: { id } });
 - Normalize responses with tools like **normalizr** .
 - Handle pagination/versioning manually.
 
-### How would you architect a frontend system to integrate with a legacy backend that has inconsistent APIs and slow response times?
+<br />
+
+### 17. How would you architect a frontend system to integrate with a legacy backend that has inconsistent APIs and slow response times?
 
 **Approach** :
 
@@ -216,7 +248,9 @@ async function getNormalizedUser(id) {
 }
 ```
 
-### What’s your approach to designing a frontend system that supports A/B testing and feature toggles at scale?
+<br />
+
+### 18. What’s your approach to designing a frontend system that supports A/B testing and feature toggles at scale?
 
 **System Design** :
 
@@ -232,7 +266,9 @@ async function getNormalizedUser(id) {
 
 - Flags should be typed, scoped, and cleanly removed after experiments.
 
-### How do you design a frontend system to collaborate with a backend team using a contract-first approach (e.g., OpenAPI, GraphQL schemas)?
+<br />
+
+### 19. How do you design a frontend system to collaborate with a backend team using a contract-first approach (e.g., OpenAPI, GraphQL schemas)?
 
 **Best Practices** :
 
@@ -249,7 +285,9 @@ type GetUserQuery = {
 
 - Enforce contract evolution rules (e.g., additive changes only) to avoid breaking consumers.
 
-### How would you design a frontend system to support multiple deployment environments (e.g., dev, staging, prod) with different configurations?
+<br />
+
+### 20. How would you design a frontend system to support multiple deployment environments (e.g., dev, staging, prod) with different configurations?
 
 **Approach** :
 
@@ -263,7 +301,9 @@ const apiBase = process.env.REACT_APP_API_URL;
 - Ensure sensitive values are only injected at build and not leaked to client.
 - Automate deploys with CI/CD pipelines per environment.
 
-### How do you design a frontend system to gracefully handle browser compatibility issues across a wide range of devices and versions?
+<br />
+
+### 21. How do you design a frontend system to gracefully handle browser compatibility issues across a wide range of devices and versions?
 
 **Techniques** :
 
@@ -279,7 +319,9 @@ if (!window.fetch) {
 
 - Test with tools like BrowserStack or Playwright.
 
-### What’s your approach to designing a frontend system with zero-downtime deployments?
+<br />
+
+### 22. What’s your approach to designing a frontend system with zero-downtime deployments?
 
 **Practices** :
 
@@ -293,7 +335,9 @@ if (!window.fetch) {
 
 - Use Service Workers (PWA) carefully to avoid stale caches (version them explicitly).
 
-### How do you design a frontend monitoring system to track performance, errors, and user behavior in production?
+<br />
+
+### 23. How do you design a frontend monitoring system to track performance, errors, and user behavior in production?
 
 **Tooling** :
 
@@ -307,7 +351,9 @@ reportWebVitals((metric) => sendToAnalytics(metric));
 
 - Group and alert on errors by component/version, and use source maps in production.
 
-### How would you architect a frontend system to support long-term maintenance by a team of varying skill levels?
+<br />
+
+### 24. How would you architect a frontend system to support long-term maintenance by a team of varying skill levels?
 
 **Strategies** :
 
@@ -324,7 +370,9 @@ reportWebVitals((metric) => sendToAnalytics(metric));
 
 - Emphasize **code reviews** , mentorship, and writing tests (unit + E2E).
 
-### What’s your approach to designing a frontend system that can recover from catastrophic failures (e.g., corrupted state, network outages)?
+<br />
+
+### 25. What’s your approach to designing a frontend system that can recover from catastrophic failures (e.g., corrupted state, network outages)?
 
 **Defense Strategy** :
 

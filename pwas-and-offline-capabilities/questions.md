@@ -1,4 +1,4 @@
-### How do you design a React application to meet Progressive Web App (PWA) standards?
+### 1. How do you design a React application to meet Progressive Web App (PWA) standards?
 
 **Answer:**
 I start by ensuring the core PWA criteria are met:
@@ -20,7 +20,9 @@ serviceWorkerRegistration.register();
 
 I also use Lighthouse to audit and verify compliance.
 
-### What’s your approach to implementing offline caching in a React app using service workers?
+<br />
+
+### 2. What’s your approach to implementing offline caching in a React app using service workers?
 
 **Answer:**
 I use a service worker to cache essential assets (HTML, CSS, JS) and optionally API responses:
@@ -53,7 +55,9 @@ self.addEventListener('fetch', event => {
 
 This ensures the app shell and some dynamic data are available offline.
 
-### How do you integrate push notifications into a React PWA?
+<br />
+
+### 3. How do you integrate push notifications into a React PWA?
 
 **Answer:**
 
@@ -76,7 +80,9 @@ self.addEventListener('push', event => {
 
 On the React side, I integrate the subscription logic and send it to the backend for storage.
 
-### What’s your strategy for ensuring a React app remains functional offline with dynamic data?
+<br />
+
+### 4. What’s your strategy for ensuring a React app remains functional offline with dynamic data?
 
 **Answer:**
 
@@ -102,7 +108,9 @@ const getData = async () => {
 
 ```
 
-### How do you test the offline capabilities of a React PWA across different devices and browsers?
+<br />
+
+### 5. How do you test the offline capabilities of a React PWA across different devices and browsers?
 
 **Answer:**
 
@@ -112,7 +120,9 @@ const getData = async () => {
 - Use **BrowserStack** or real devices for cross-browser testing.
 - Test both cold start (fully offline) and warm start (cached session).
 
-### What’s your approach to optimizing the installability of a React PWA (e.g., manifest files)?
+<br />
+
+### 6. What’s your approach to optimizing the installability of a React PWA (e.g., manifest files)?
 
 **Answer:**
 
@@ -141,7 +151,9 @@ const getData = async () => {
 
 - Show install prompts using the `beforeinstallprompt` event.
 
-### How do you handle state management in a React PWA during network disruptions?
+<br />
+
+### 7. How do you handle state management in a React PWA during network disruptions?
 
 **Answer:**
 
@@ -161,7 +173,9 @@ window.addEventListener('online', () => {
 
 The goal is eventual consistency without blocking the UI.
 
-### What’s your process for debugging service worker issues in a React application?
+<br />
+
+### 8. What’s your process for debugging service worker issues in a React application?
 
 **Answer:**
 
@@ -179,7 +193,9 @@ self.addEventListener('activate', event => {
 
 ```
 
-### How do you measure the performance impact of PWA features in a React app?
+<br />
+
+### 9. How do you measure the performance impact of PWA features in a React app?
 
 **Answer:**
 
@@ -188,7 +204,9 @@ self.addEventListener('activate', event => {
 - Track **cache hit rates** , and **network request fallbacks** using custom logging or analytics (e.g., Sentry, LogRocket).
 - Use `web-vitals` to track metrics like FCP, LCP, and CLS.
 
-### How do you educate a team on building and maintaining a PWA with React?
+<br />
+
+### 10. How do you educate a team on building and maintaining a PWA with React?
 
 **Answer:**
 

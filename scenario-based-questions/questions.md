@@ -1,4 +1,4 @@
-### Design a reusable modal component in React that can be triggered from anywhere in the app.
+### 1. Design a reusable modal component in React that can be triggered from anywhere in the app.
 
 **Approach** : Use context and portals.
 
@@ -30,7 +30,9 @@ const { setContent } = useModal();
 setContent(<MyModalContent onClose={() => setContent(null)} />);
 ```
 
-### How would you handle a situation where a React component needs to fetch data from multiple APIs and combine the results?
+<br />
+
+### 2. How would you handle a situation where a React component needs to fetch data from multiple APIs and combine the results?
 
 **Approach** :
 
@@ -52,7 +54,9 @@ useEffect(() => {
 
 **Bonus** : Add loading/error states and use `AbortController` for cleanup.
 
-### Imagine you’re tasked with refactoring a large, poorly maintained React codebase. Where would you start?
+<br />
+
+### 3. Imagine you’re tasked with refactoring a large, poorly maintained React codebase. Where would you start?
 
 **Approach** :
 
@@ -63,7 +67,9 @@ useEffect(() => {
 5. **Convert class components to hooks** where possible.
 6. **Progressively type with TypeScript** , starting from utils and shared components.
 
-### How would you implement a feature where a user can drag and drop items in a list in a React app?
+<br />
+
+### 4. How would you implement a feature where a user can drag and drop items in a list in a React app?
 
 **Tool** : Use `@dnd-kit/core` or `react-beautiful-dnd`.
 
@@ -94,7 +100,9 @@ useEffect(() => {
 </DragDropContext>
 ```
 
-### You’re tasked with leading a team to build a dashboard with real-time data updates in React. How would you approach it?
+<br />
+
+### 5. You’re tasked with leading a team to build a dashboard with real-time data updates in React. How would you approach it?
 
 **Architecture** :
 
@@ -113,7 +121,9 @@ useEffect(() => {
 - Use WebSocket manager and reconnection logic.
 - Rate limit updates for performance
 
-### How would you handle a situation where a stakeholder requests a feature that conflicts with performance or accessibility goals?
+<br />
+
+### 6. How would you handle a situation where a stakeholder requests a feature that conflicts with performance or accessibility goals?
 
 **Approach** :
 
@@ -123,7 +133,9 @@ useEffect(() => {
 - **Compromise** : Propose an alternative that meets both business and technical needs.
 - **Document** : Log decisions and revisit if data shows it's worth iterating.
 
-### Design a reusable data table component in React with sorting, filtering, and pagination features.
+<br />
+
+### 7. Design a reusable data table component in React with sorting, filtering, and pagination features.
 
 **High-level API** :
 
@@ -146,7 +158,9 @@ useEffect(() => {
 - Use memoization (`useMemo`) for derived data.
 - Extract row rendering via render prop.
 
-### A React app you inherited has no tests and poor documentation. How would you lead the effort to improve it?
+<br />
+
+### 8. A React app you inherited has no tests and poor documentation. How would you lead the effort to improve it?
 
 **Plan** :
 
@@ -157,7 +171,9 @@ useEffect(() => {
 5. Establish CI pipeline with coverage tracking and lint checks.
 6. Create a **contribution guide** to enforce test-driven contributions.
 
-### How would you integrate a third-party API with rate limits into a React application without degrading user experience?
+<br />
+
+### 9. How would you integrate a third-party API with rate limits into a React application without degrading user experience?
 
 **Strategies** :
 

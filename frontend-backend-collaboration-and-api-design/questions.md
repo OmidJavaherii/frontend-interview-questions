@@ -1,4 +1,4 @@
-### How do you collaborate with backend teams to design APIs that meet the needs of a React frontend?
+### 1. How do you collaborate with backend teams to design APIs that meet the needs of a React frontend?
 
 I start by aligning on **use cases and data needs** via API contracts or OpenAPI specs. I advocate for:
 
@@ -8,7 +8,9 @@ I start by aligning on **use cases and data needs** via API contracts or OpenAPI
 
 We use **Postman/Swagger** for early mocks and **shared API design docs** . I emphasize **frontend-first thinking** : minimize over-fetching and support real-time or lazy-loading if needed.
 
-### What’s your approach to handling API versioning in a React app when the backend evolves?
+<br />
+
+### 2. What’s your approach to handling API versioning in a React app when the backend evolves?
 
 **Answer:**
 
@@ -24,7 +26,9 @@ export const fetchUser = () => axios.get("/v2/user");
 - Use **feature flags** or environment-based toggles to migrate gracefully
 - Track version drift with integration tests
 
-### How do you design a React frontend to handle inconsistent or poorly documented backend APIs?
+<br />
+
+### 3. How do you design a React frontend to handle inconsistent or poorly documented backend APIs?
 
 **Answer:**
 
@@ -44,7 +48,9 @@ const mapUser = (data) => ({ id: data.user_id, name: data.full_name });
 
 - Document and flag inconsistencies for backend refactoring
 
-### What’s your strategy for optimizing API payloads for a React app’s performance?
+<br />
+
+### 4. What’s your strategy for optimizing API payloads for a React app’s performance?
 
 **Answer:**
 
@@ -60,7 +66,9 @@ axios.get('/users?page=2&limit=10');
 - Compress responses (Gzip/Brotli) and cache where possible
 - Use **server-driven sorting/filtering** to avoid client-side overhead
 
-### How do you integrate real-time APIs (e.g., WebSockets, Server-Sent Events) into a React app?
+<br />
+
+### 5. How do you integrate real-time APIs (e.g., WebSockets, Server-Sent Events) into a React app?
 
 **Answer:**
 
@@ -77,7 +85,9 @@ useEffect(() => {
 - For SSE: use `EventSource`, but fall back to polling if needed
 - Clean up sockets on unmount to prevent memory leaks
 
-### What’s your approach to mocking APIs during React development when the backend isn’t ready?
+<br />
+
+### 6. What’s your approach to mocking APIs during React development when the backend isn’t ready?
 
 **Answer:**
 
@@ -93,7 +103,9 @@ rest.get('/api/user', (req, res, ctx) => res(ctx.json({ name: 'Test' })));
 - Toggle mock mode via `NODE_ENV` or dev flag
 - Mock at the network level to test integration, not logic
 
-### How do you handle rate-limited APIs in a React app without degrading user experience?
+<br />
+
+### 7. How do you handle rate-limited APIs in a React app without degrading user experience?
 
 **Answer:**
 
@@ -109,7 +121,9 @@ const debouncedSearch = debounce(fetchSuggestions, 300);
 - Show UI feedback (e.g., spinners, retry buttons)
 - Cache frequent responses locally when possible (e.g., `react-query`, SWR)
 
-### What’s your process for debugging frontend-backend integration issues in a React app?
+<br />
+
+### 8. What’s your process for debugging frontend-backend integration issues in a React app?
 
 **Answer:**
 
@@ -121,7 +135,9 @@ const debouncedSearch = debounce(fetchSuggestions, 300);
 
 Collaborate closely with backend engineers, ideally in real-time debugging sessions.
 
-### How do you advocate for frontend needs (e.g., pagination, filtering) in backend API design discussions?
+<br />
+
+### 9. How do you advocate for frontend needs (e.g., pagination, filtering) in backend API design discussions?
 
 **Answer:**
 
@@ -130,7 +146,9 @@ Collaborate closely with backend engineers, ideally in real-time debugging sessi
 - Emphasize **mobile performance** and **data granularity**
 - Use shared API specs or examples to bridge gaps
 
-### How do you train a frontend team to work effectively with backend engineers on a React project?
+<br />
+
+### 10. How do you train a frontend team to work effectively with backend engineers on a React project?
 
 **Answer:**
 
