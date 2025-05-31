@@ -41,3 +41,47 @@ A well-organized collection of frontend interview questions, categorized by topi
 ## 🙌 Contributing
 
 Contributions are welcome! Feel free to submit a pull request if you have improvements or additional questions.
+
+##
+# سؤالات مصاحبه فرانت‌اند
+
+مجموعه‌ای سازمان‌یافته از سؤالات مصاحبه فرانت‌اند، دسته‌بندی‌شده بر اساس موضوع، طراحی‌شده برای کمک به شما در آماده‌سازی برای مصاحبه‌های فنی، تعمیق دانش و خدمت به‌عنوان مرجعی عملی برای یادگیری مداوم.
+
+## 📚 دسته‌بندی‌ها
+
+- [ویژگی‌ها و معماری پیشرفته](./persian/advanced-features-and-architecture/questions.md)
+- [رهبری و همکاری تیمی](./persian/leadership-and-team-collaboration/questions.md)
+- [ابزارهای ساخت و بسته‌بندی](./persian/build-tools-and-bundlers/questions.md)
+- [میکرو-فرانت‌اندها](./persian/micro-frontends/questions.md)
+- [CI/CD و ابزارهای نظارتی](./persian/ci-cd-and-monitoring-tools/questions.md)
+- [بهینه‌سازی عملکرد و معیارهای اصلی وب](./persian/performance-optimization-and-core-web-vitals/questions.md)
+- [مفاهیم اصلی React/Vue](./persian/core-react-vue-concepts/questions.md)
+- [PWAها و قابلیت‌های آفلاین](./persian/pwas-and-offline-capabilities/questions.md)
+- [CSS و استایل‌دهی](./persian/css-and-styling/questions.md)
+- [مدل‌های ذهنی CSS](./persian/css-mental-models/questions.md)
+- [سؤالات مبتنی بر سناریو](./persian/scenario-based-questions/questions.md)
+- [توسعه عمیق فرانت‌اند](./persian/deep-frontend-development/questions.md)
+- [اپلیکیشن‌های تک‌صفحه‌ای](./persian/single-page-applications/questions.md)
+- [الگوهای طراحی](./persian/design-patterns/questions.md)
+- [مدیریت حالت](./persian/state-management/questions.md)
+- [روندهای نوظهور و آینده‌نگری](./persian/emerging-trends-and-future-proofing/questions.md)
+- [کار تیمی و بهترین روش‌ها](./persian/teamwork-and-best-practices/questions.md)
+- [همکاری فرانت‌اند-بک‌اند و طراحی API](./persian/frontend-backend-collaboration-and-api-design/questions.md)
+- [تست](./persian/testing/questions.md)
+- [امنیت فرانت‌اند](./persian/frontend-security/questions.md)
+- [TypeScript و جاوااسکریپت](./persian/typescript-and-javascript/questions.md)
+- [طراحی سیستم فرانت‌اند](./persian/frontend-system-design/questions.md)
+- [دسترسی‌پذیری وب](./persian/web-accessibility/questions.md)
+- [مدل‌های ذهنی HTML](./persian/html-mental-models/questions.md)
+- [بودجه‌های عملکرد وب و استراتژی‌های بهینه‌سازی](./persian/web-performance-budgets-and-optimization-strategies/questions.md)
+
+## 💡 نحوه استفاده
+
+- ✅ برای مطالعه برای مصاحبه‌های فرانت‌اند استفاده کنید
+- 🔁 سؤالات بیشتری اضافه کنید یا پاسخ‌ها را بهبود دهید
+- 📥 این مخزن را کلون یا فورک کنید و به‌طور منظم تمرین کنید
+
+## 🙌 مشارکت
+
+مشارکت‌ها خوش‌آمد هستند! اگر بهبود یا سؤالات اضافی دارید، آزادانه یک درخواست کشش ارسال کنید.
+
