@@ -1,3 +1,10 @@
+---
+title: Frontend Interview Questions
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/persian.css">
+
+
 # Frontend Interview Questions
 
 ![frontend interview questions](./banner.png "frontend interview questions")
